@@ -1,6 +1,6 @@
 body {
   background-color: #008C9A;
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   color: #FCFBE7;
 }
@@ -13,7 +13,12 @@ body {
 }
 
 h1 {
-  font-family: serif;
-  font-size: 24px;
-  font-weight: heavy;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.lastname {
+  display: block;
+  font-size: 52px;
+  text-transform: uppercase;
 }
