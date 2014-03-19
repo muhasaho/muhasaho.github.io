@@ -20,6 +20,15 @@ body {
   top:50%;
   margin:-75px 0 0 -135px;
   text-align: center;
-  -moz-border-radius: 1em 1em 1em 1em;
-  border-radius: 1em 1em 1em 1em;
+  -moz-border-radius: 0.5em 0.5em 0.5em 0.5em;
+  border-radius: 0.5em 0.5em 0.5em 0.5em;
 }
+
+.social{
+  color: #ffffff;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+/*remove underline from links*/
+a {text-decoration: none; }
