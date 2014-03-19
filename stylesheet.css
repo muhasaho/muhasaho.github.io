@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans|Cinzel+Decorative:700,900);
+
 body {
   background-color: #ffffff;
 }
@@ -25,10 +27,35 @@ body {
 }
 
 .social{
-  color: #ffffff;
+  color: #BDBDBD;
   margin-right: 5px;
   margin-left: 5px;
 }
 
+a:hover .social{
+  color: #FFFFFF;
+}
+
 /*remove underline from links*/
 a {text-decoration: none; }
+
+
+/*sticky footer*/
+html, body {height: 100%;}
+#footwrap {min-height: 100%;}
+#footer {
+  position: relative;
+  margin-top: -100px; /* negative value of footer height */
+  height: 100px;
+  clear:both;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+} 
+/*Opera Fix*/
+body:before {
+  content:"";
+  height:100%;
+  float:left;
+  width:0;
+  margin-top:-32767px;/
+}
