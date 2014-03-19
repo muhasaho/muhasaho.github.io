@@ -1,24 +1,22 @@
 body {
-  background-color: #008C9A;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-  color: #FCFBE7;
+  background-color: #ffffff;
 }
 
-
-#container {
-  width: 650px;
-  margin: 0;
-  padding: 40px;
-}
 
 h1 {
-  font-size: 18px;
-  font-weight: normal;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: 'Cinzel Decorative', cursive;
+
 }
 
-.lastname {
-  display: block;
-  font-size: 52px;
-  text-transform: uppercase;
+.center-box{
+  background-color: blue;
+  width:270px;
+  height:150px;
+  position:absolute;
+  left:50%;
+  top:50%;
+  margin:-75px 0 0 -135px;
+  text-align: center;
 }
