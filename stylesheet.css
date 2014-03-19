@@ -3,15 +3,16 @@ body {
 }
 
 
-h1 {
+.name {
   font-size: 36px;
   font-weight: 700;
   font-family: 'Cinzel Decorative', cursive;
-
+  color: #ffffff;
 }
 
 .center-box{
-  background-color: blue;
+  background-color: #000000;
+  opacity: 0.8;
   width:270px;
   height:150px;
   position:absolute;
@@ -19,4 +20,6 @@ h1 {
   top:50%;
   margin:-75px 0 0 -135px;
   text-align: center;
+  -moz-border-radius: 1em 1em 1em 1em;
+  border-radius: 1em 1em 1em 1em;
 }
