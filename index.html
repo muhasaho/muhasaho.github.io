@@ -1,54 +1,208 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>aho, M.</title>
-    <meta name="description" content="Muhammed Saho Personal Page">
-    <meta name="author" content="Muhammed Saho">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dr. Muhammed Saho</title>
+  <meta name="description" content="Dr. Muhammed Saho is a manufacturing technology consultant in North America.">
+  <meta name="author" content="Dr. Muhammed Saho">
+  <link rel="canonical" href="https://sahoism.com/">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/dr-muhammed-saho-400.jpg">
+  <meta name="color-scheme" content="light dark">
 
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
-    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon' />
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Dr. Muhammed Saho">
+  <meta property="og:description" content="Manufacturing technology consultant in North America.">
+  <meta property="og:url" content="https://sahoism.com/">
+  <meta property="og:image" content="https://sahoism.com/dr-muhammed-saho.jpg">
+  <meta name="twitter:card" content="summary">
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Muhammed Saho",
+    "honorificPrefix": "Dr.",
+    "jobTitle": "Manufacturing technology consultant",
+    "url": "https://sahoism.com/",
+    "image": "https://sahoism.com/dr-muhammed-saho.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/in/m-saho/",
+      "https://github.com/muhasaho",
+      "https://blog.sahoism.com/"
+    ]
+  }
+  </script>
 
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
 
+  <style>
+    :root {
+      --bg: #fdfcfa;
+      --fg: #1f1d24;
+      --muted: #6b6775;
+      --border: #e7e3ec;
+      --accent: #6b3fa0;
+      --wordmark: 'Josefin Sans', system-ui, sans-serif;
+      --sans: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #17151b;
+        --fg: #e9e6ee;
+        --muted: #9b96a6;
+        --border: #2d2a34;
+        --accent: #b99ae6;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      background: var(--bg);
+      color: var(--fg);
+      font: 1.0625rem/1.6 var(--sans);
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      width: 100%;
+      max-width: 28rem;
+      margin: 0 auto;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    .photo {
+      width: 9rem;
+      height: 9rem;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid var(--border);
+    }
 
-    <link rel="stylesheet" href="stylesheet.css">
-    
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    
-      ga('create', 'UA-27921982-1', 'sahoism.com');
-      ga('send', 'pageview');
-    
-    </script>
+    /* Wordmark from the original site: "muha / mmed" stacked beside "SAHO". */
+    h1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      margin: 0;
+      font: 300 3rem/1 var(--wordmark);
+      letter-spacing: 0.02em;
+    }
+    h1 .first {
+      display: flex;
+      flex-direction: column;
+      font-size: 0.36em;
+      line-height: 1.05;
+      text-align: left;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+    }
+    h1 .last { padding-top: 0.12em; }
+
+    .tagline { margin: -0.75rem 0 0; color: var(--muted); text-wrap: balance; }
+    .tagline strong { color: var(--fg); font-weight: 600; }
+
+    .links {
+      display: flex;
+      gap: 0.75rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .links a {
+      display: grid;
+      place-items: center;
+      width: 2.75rem;
+      height: 2.75rem;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      color: var(--muted);
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .links a:hover, .links a:focus-visible { color: var(--accent); border-color: var(--accent); }
+    .links svg { width: 1.2rem; height: 1.2rem; fill: currentColor; }
+
+    .latest {
+      width: 100%;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+    .latest p { margin: 0; }
+    .latest a { color: var(--accent); text-underline-offset: 0.15em; }
+
+    footer {
+      padding: 1.5rem 1rem;
+      text-align: center;
+      font: 300 0.9rem var(--wordmark);
+      color: var(--muted);
+    }
+  </style>
 </head>
-
 <body>
-    <div class="center-box">
-        <!--<a href="#"><h1 class="name">M. Saho</h1></a>-->
-        <a href="#"><img class="name-image" src="name-white.png" /></a>
-        <a target="_blank" href="https://twitter.com/muhasaho">
-            <i class="social fa fa-twitter fa-lg"></i>
-        </a>
-        <a target="_blank" href="https://github.com/muhasaho">
-            <i class="social fa fa-github fa-lg"></i>
-        </a>
-        <a href="http://blog.sahoism.com">
-            <i class="social fa fa-pencil fa-lg"></i>
-        </a>
-    </div><!-- /container -->
+  <main>
+    <img class="photo" src="/dr-muhammed-saho-400.jpg" alt="Dr. Muhammed Saho" width="144" height="144">
 
+    <h1 aria-label="Muhammed Saho">
+      <span class="first" aria-hidden="true"><span>muha</span><span>mmed</span></span>
+      <span class="last" aria-hidden="true">SAHO</span>
+    </h1>
 
-    <div id="footwrap"></div>
-    <div id="footer">
-        <p>&copy; Copyright 2014 M. Saho</p>
-    </div>
+    <p class="tagline"><strong>Dr. Muhammed Saho</strong><br>Manufacturing technology consultant in North America</p>
+
+    <ul class="links">
+      <li>
+        <a href="https://www.linkedin.com/in/m-saho/" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/muhasaho" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.1.9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/></svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://blog.sahoism.com/" aria-label="Blog">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a1 1 0 0 0 0-1.41l-2.34-2.34a1 1 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
+        </a>
+      </li>
+    </ul>
+
+    <section class="latest" aria-labelledby="latest-heading">
+      <p><span id="latest-heading">Latest from the blog:</span>
+        <a id="latest-link" href="https://blog.sahoism.com/business/manufacturing/2026/11/07/Zhe-Factory/">Zhè Factory</a></p>
+    </section>
+  </main>
+
+  <footer>© 2014–<span id="year">2026</span> M. Saho</footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Keep "Latest from the blog" current without a rebuild. The link above is the fallback.
+    fetch('https://blog.sahoism.com/feed.xml')
+      .then((r) => (r.ok ? r.text() : Promise.reject()))
+      .then((xml) => {
+        const item = new DOMParser().parseFromString(xml, 'application/xml').querySelector('item');
+        const title = item?.querySelector('title')?.textContent;
+        const link = item?.querySelector('link')?.textContent;
+        if (!title || !link?.startsWith('https://blog.sahoism.com/')) return;
+        const a = document.getElementById('latest-link');
+        a.textContent = title;
+        a.href = link;
+      })
+      .catch(() => {});
+  </script>
 </body>
 </html>
-
